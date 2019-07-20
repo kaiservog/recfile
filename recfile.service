@@ -1,0 +1,13 @@
+[Unit]
+AssertPathExists=/home/badhunter
+
+[Service]
+WorkingDirectory=/home/badhunter
+ExecStart=/usr/bin/recfile
+Restart=always
+PrivateTmp=true
+NoNewPrivileges=true
+
+[Install]
+WantedBy=default.target
+
